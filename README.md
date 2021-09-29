@@ -10,6 +10,8 @@ The water detection input to the microcontroller consists of an NPN transistor c
 
 The input to the base is from a positive voltage PIN through alligator clips holding two layers of paper.  When the paper gets wet it conducts and provides a small positive voltage to the base of the transistor.  The amplifier inverts the signal, bringing the GPIO input low.
 
+![Schematic](https://raw.githubusercontent.com/superfrink/water-sensor/master/electronics/water-sensor/water-sensor-schematic.png)
+
 # Code
 
 The program starts by reading the GPIO pin.  If water is detected then WiFi is turned on and a message sent to an MQTT broker.  Regardless of water detected, the program sleeps for several seconds.
