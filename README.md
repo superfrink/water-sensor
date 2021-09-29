@@ -25,9 +25,10 @@ The power source used in the application was an 18650 cell with a 5 V boost conv
 
 Typical power efficiency techniques for the ESP8266 development boards can be applied where needed by the application.
 
+Instead of checking periodically the transistor could be used to connect power to the microcontroller.
+
 # Pending Improvements
 
 * Use additional GPIO pins and jumpers to configure the sleep time.
 * Store multiple samples in ROTC RAM and send them periodically if there is no water.  Send immediately if there is water.
 * Measure the 18650 voltage (before the boost converter) via the analog input pin and a voltage divider.  Include this value in the MQTT messages.
-* Add a schematic to this repository.
